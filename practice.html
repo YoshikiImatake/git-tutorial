@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<title>練習用サイト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header><h1><p>javascript練習用サイト</p></h1></header>
+<main>
+<h2>メインメニュー</h2>
+<ul class="list">
+<script type="text/javascript">
+var menus = {
+	'home.html': 'ホーム',
+	'company.html': '会社情報',
+	'product.html': '製品情報',
+	'contact.html': 'お問い合わせ'
+}
+
+for (var m in menus){
+	document.write('<li><a href="' + m + '" title="' + m + 'に移動します">' + menus[m] + '</a></li>');
+}
+</script>
+</ul>
+
+
+<select name="prif">
+<script type="text/javascript">
+var prifs = new Array('千葉県', '東京都', '埼玉県', '茨城県');
+for (var i = 0; i<prifs.length; i++){
+	document.write('<option value="i">' + prifs[i] + '</option>');
+}
+</script>
+</select>
+</main>
+<footer class="main1"><p>コピーライト</p></footer>
+<script type="text/javascript">
+document.write('hello');
+</script>
+
+<select name="age"> 
+ <script type="text/javascript">
+ for (var i=2; i<=20; i+=2){
+ 	document.write('<option value="'+i+'">' + i + '個</option>');
+ }
+ </script>
+ </select>
+
+ </script>
+ 
+</body>
+</html>
